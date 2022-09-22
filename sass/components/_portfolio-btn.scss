@@ -1,0 +1,31 @@
+.list-button {
+    font-family: $fontMain;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: 0.03em;
+    color: $text-main;
+    background-color: var(--bcg-button);
+    border: var(--bcg-button);
+    border-radius: 4px;
+    padding: 6px 22px;
+    cursor: pointer;
+    transition: color var(--time-bezier), background-color var(--time-bezier), box-shadow var(--time-bezier);
+
+    &:hover,
+    &:focus {
+        color: $main-color;
+        background-color: $text-items;
+        box-shadow: var(--shadow-button);
+    }
+
+    &.list-button--active {
+        background-color: $text-items;
+        color: $main-color;
+        box-shadow: var(--shadow-button)
+    }
+}
+
+.first {
+    padding: 6px 25px;
+}

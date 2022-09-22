@@ -1,0 +1,31 @@
+.socila-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.social-list__icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--icon-social);
+    transition: fill var(--time-bezier);
+}
+
+.social-list__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: $main-color;
+    transition: background-color var(--time-bezier);
+    &:hover,
+    &:focus {
+        background-color: $text-items;
+    }
+    &:hover .social-list__icon,
+    &:focus .social-list__icon {
+        fill: $main-color;
+    }
+}

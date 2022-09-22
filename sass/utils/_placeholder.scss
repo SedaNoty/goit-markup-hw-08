@@ -1,0 +1,19 @@
+
+%section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.services-portfolio,
+.features,
+.works,
+.team,
+.regular-customers {
+    @extend %section;
+}
+
+
+@mixin flexSpaceBetween() {
+    display: flex;
+    justify-content: space-between;
+}

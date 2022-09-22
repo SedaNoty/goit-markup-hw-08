@@ -1,0 +1,33 @@
+.features__features-menu {
+    @include flexSpaceBetween();
+}
+
+.features__features-card {
+    width: calc((100% - 3 * 30px)/4);
+}
+
+.features__description {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.features__transcript {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--text-contacts);
+}
+
+.features__advantage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    border-radius: 4px;
+    background-color: var(--bcg-button);
+    margin-bottom: 30px;
+}

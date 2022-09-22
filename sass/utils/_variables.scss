@@ -1,0 +1,41 @@
+:root {
+    
+    --main-opacity-two: #FFFFFF10;
+    --overlay-cards: rgba(33, 150, 243, 0.9);
+    --element-hero: #2F303A;
+    --strip-applications: #2F303A80;
+    --text-page: #000000;
+    --text-contacts: #757575;
+    --bcg-button: #F5F4FA;
+    --bcg-btn-hero: #188CE8;
+    --border-header: #ECECEC;
+    --border-portfolio: #EEEEEE;
+    --modal-backround: #00000050;
+    --modal-close: #00000010;
+    --icon-social: #AFB1B8;
+    --text-placeholder: rgba(117, 117, 117, 0.5);
+    --border-modal: rgba(33, 33, 33, 0.2);
+    --card-distance: 30px;
+    --time-bezier: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    --portfolio-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    --shadow-button: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    --shadow-modal-window: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+$fontMain: "Roboto", sans-serif;
+$fontLogo: 'Raleway', sans-serif;
+$main-color: #FFFFFF;
+$text-main: #212121;
+$text-items: #2196F3;
+$main-opacity: #FFFFFF60;
+$overlay-cards: rgba(33, 150, 243, 0.9);

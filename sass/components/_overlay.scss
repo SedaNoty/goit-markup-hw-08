@@ -1,0 +1,55 @@
+.menu-service {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--card-distance));
+    margin-left: calc(-1 * var(--card-distance));
+    &>.picture-portfolio {
+        flex-basis: calc(100%/3 - var(--card-distance));
+        margin-left: var(--card-distance);
+        margin-top: var(--card-distance);
+    }
+}
+
+.picture-portfolio {
+    text-align: left;
+    padding-bottom: 0px;
+}
+
+.cards-portfolio-overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $overlay-cards;
+    color: $main-color;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    padding: 0 24px;
+    overflow: auto;
+    transform: translateY(100%);
+    transition: transform var(--time-bezier);
+}
+
+
+.cards-portfolio:hover .overlay,
+.cards-portfolio:focus .overlay {
+    transform: translateY(0);
+}
+
+
+.menu-description {
+    border-left: 1px solid var(--border-portfolio);
+    border-bottom: 1px solid var(--border-portfolio);
+    border-right: 1px solid var(--border-portfolio);
+    padding: 20px 24px;
+}
