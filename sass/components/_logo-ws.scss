@@ -1,8 +1,10 @@
 .logo-studio {
     font-family: $fontLogo;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 700;
-    line-height: 1.24;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+
     &__first-title {
         color: $text-items;
     }
@@ -15,3 +17,13 @@
         color: $main-color;
     }
 }
+
+
+
+@media screen and (min-width: 1200px) {
+    .logo-studio {
+            font-size: 26px;
+            line-height: 1.92;
+        }
+}
+
