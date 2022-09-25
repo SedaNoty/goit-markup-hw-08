@@ -11,6 +11,13 @@
     transition: fill var(--time-bezier);
 }
 
+.footer-social__icon {
+    fill: $main-color;
+    width: 20px;
+    height: 20px;
+    transition: fill var(--time-bezier);
+}
+
 .social-list__link {
     display: flex;
     align-items: center;

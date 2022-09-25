@@ -29,14 +29,15 @@
     color: var(--text-contacts);
 }
 
-@media screen and(min-width: 768px) {
+@media screen and (min-width: 768px) {
       .features__features-card {
         width: 354px;
         display: inline-block;
+        text-align: center;
     }
 }
 
-@media screen and(min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .features__features-menu {
             @include flexSpaceBetween();
         }

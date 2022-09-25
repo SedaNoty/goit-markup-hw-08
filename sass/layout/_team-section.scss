@@ -1,23 +1,7 @@
 .team {
     background-color: var(--bcg-button);
-}
-
-.team__menu {
-    display: flex;
-    justify-content: space-between;
-}
-
-.team__foto {
-    text-align: center;
-    background-color: $main-color;
-    border-radius: 0 0 4px 4px;
-    box-shadow: var(--card-shadow);
-    width: calc((100% - 3 * 30px)/4);
-}
-
-.team__members {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    
+    
 }
 
 .team__employee {
@@ -27,7 +11,6 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
 }
-
 .team__direction {
     font-size: 16px;
     font-weight: 400;
@@ -36,3 +19,48 @@
     color: var(--text-contacts);
     margin-bottom: 16px;
 }
+
+.team__foto-member {
+    max-width: 100%;
+    margin: 0 auto;  
+}
+
+.team__title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.team__foto {
+    text-align: center;
+    background-color: $main-color;
+    border-radius: 0 0 4px 4px;
+    box-shadow: var(--card-shadow);
+    margin-bottom: 30px;
+}
+
+.team__members {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+@media screen and (min-width: 768px){
+        .team__foto {
+            display: inline-block;
+            width: calc((100% - 30px)/2);
+         }
+}
+
+@media screen and (min-width: 1200px) {
+    .team__menu {
+            display: flex;
+            gap: 30px;
+        }    
+        .team__foto {
+            text-align: center;
+            background-color: $main-color;
+            border-radius: 0 0 4px 4px;
+            box-shadow: var(--card-shadow);
+            width: calc((100% - 3 * 30px)/4);
+        }
+}
+
