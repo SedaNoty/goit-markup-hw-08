@@ -1,30 +1,25 @@
 .menu-nav-porfolio {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    margin-bottom: 40px;
 }
 
 .button-menu {
-    margin-right: 8px;
+    margin-right: 9px;
 }
 
-.cards-portfolio {
-    display: block;
-    transition: box-shadow var(--time-bezier);
-    &:hover,
-    &:focus {
-        box-shadow: var(--portfolio-shadow);
-    }
+.first {
+    padding: 6px 25px;
 }
-
 .menu-portfolio {
+    width: 304px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: $text-main;
 }
-
 .service-name {
     font-weight: 400;
     font-size: 16px;
@@ -32,4 +27,62 @@
     letter-spacing: 0.03em;
     color: var(--text-contacts);
     margin-top: 4px;
+}
+
+.cards-portfolio {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: box-shadow var(--time-bezier);
+    &:hover,
+    &:focus {
+        box-shadow: var(--portfolio-shadow);
+    }
+}
+
+.menu-service {
+    display: flex;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 1199px) {
+    .menu-service {
+        gap: 30px;
+        }
+    
+}
+
+img {
+    display: block;
+    width: 450px; 
+}
+
+@media screen and (min-width: 768px) {
+    .menu-nav-porfolio {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    img {
+         width: 354px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .menu-portfolio {
+        width: 100%;
+    }
+    .menu-nav-porfolio {
+          margin-bottom: 50px;
+    }
+    .menu-service {
+        margin-top: calc(-1 * var(--card-distance));
+        margin-left: calc(-1 * var(--card-distance));
+        &>.picture-portfolio {
+            flex-basis: calc(100%/3 - var(--card-distance));
+            margin-left: var(--card-distance);
+            margin-top: var(--card-distance);
+        }
+    }
+    img {
+        width: 370px;
+    }
 }

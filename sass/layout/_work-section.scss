@@ -27,24 +27,23 @@
         }
     
         .work {
-            padding-top: 0;
+            padding-bottom: 94px;
         }
     
     
         .work__text-applcations {
-            position: absolute;
             font-size: 14px;
             line-height: 1.43;
             text-transform: uppercase;
             font-weight: 700;
             color: $main-color;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
         }
     
         .work__applications {
             position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             bottom: 0;
             left: 0;
             width: 100%;

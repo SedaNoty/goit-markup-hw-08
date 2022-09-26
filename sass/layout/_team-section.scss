@@ -35,7 +35,9 @@
     background-color: $main-color;
     border-radius: 0 0 4px 4px;
     box-shadow: var(--card-shadow);
-    margin-bottom: 30px;
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
 }
 
 .team__members {

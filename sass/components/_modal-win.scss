@@ -1,3 +1,4 @@
+
 .modal {
     width: 450px;
     position: absolute;
@@ -32,7 +33,13 @@
     padding: 0;
     cursor: pointer;
 }
-@media screen and(min-width: 1200px) {
+
+@media screen and (max-width: 479px) {
+    .modal {
+        width: 96%;
+    }
+}
+@media screen and (min-width: 1200px) {
     .modal {
             width: 528px;
     }

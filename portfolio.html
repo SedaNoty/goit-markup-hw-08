@@ -43,7 +43,14 @@
             </li>
           </ul>
         </nav>
-        <ul class="connection">
+
+        <button type="button" class="open-mobile-menu-btn" data-menu-open>
+          <svg class="open-mobile-menu-btn__icon">
+            <use href="./images/sprite.svg#icon-burger" class=""></use>
+          </svg>
+        </button>
+
+        <ul class="connection__header connection">
           <li>
             <a class="connection__contact" href="email:info@devstudio.com">
               <svg
@@ -72,8 +79,59 @@
           </li>
         </ul>
       </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon">
+              <use href="./images/sprite.svg#icon-close_mobile"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu__nav-menu">
+            <li class="mobile__item">
+              <a class="mobile__item mobile__item--current" href="index.html"
+                >Студія</a
+              >
+            </li>
+            <li class="mobile__item">
+              <a class="mobile__item" href="portfolio.html">Портфоліо</a>
+            </li>
+            <li class="mobile__item">
+              <a class="mobile__item" href="#">Контакти</a>
+            </li>
+          </ul>
+          <ul class="mobile-menu__contact">
+            <li>
+              <a class="mobile-menu__contact--telephon" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li>
+              <a class="mobile-menu__contact--mail" href="tel:+380961111111"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu__social">
+            <li class="mobile-menu__social-list">
+              <a href="" class="mobile-menu__social-link">Instagram</a>
+            </li>
+            <li class="mobile-menu__social-list">
+              <a href="" class="mobile-menu__social-link">Twitter</a>
+            </li>
+            <li class="mobile-menu__social-list">
+              <a href="" class="mobile-menu__social-link">Facebook</a>
+            </li>
+            <li class="mobile-menu__social-list">
+              <a href="" class="mobile-menu__social-link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
+
     <!-- Main - Портфоліо -->
+
     <main class="page-porfolio">
       <section class="services-portfolio section">
         <div class="container">
@@ -279,6 +337,7 @@
         </div>
       </section>
     </main>
+
     <!-- Footer - Портфоліо -->
     <footer class="footer">
       <div class="container footer-general">
@@ -311,9 +370,9 @@
             </li>
           </ul>
         </div>
+
         <div class="footer-social">
           <h3 class="footer-social-join">Приеднуйся</h3>
-          <!-- Social-list-Footer-->
           <ul class="social-list-footer">
             <li class="list-item-footer">
               <a href="" class="social-link-footer">
@@ -357,6 +416,7 @@
             </li>
           </ul>
         </div>
+
         <div class="footer-form">
           <p class="footer-form-subscribe">Підпишіться на розсилку</p>
           <form class="footer-form-email">
@@ -383,5 +443,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>

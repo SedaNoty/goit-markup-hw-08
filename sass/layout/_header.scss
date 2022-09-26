@@ -11,6 +11,11 @@
         background-color: transparent;
         padding: 0;
         cursor: pointer;
+        &:hover,
+        &:focus {
+            fill: $text-items;
+        }
+        transition: var(--time-bezier);
     }
 
     .open-mobile-menu-btn__icon {

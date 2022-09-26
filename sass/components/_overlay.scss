@@ -1,14 +1,3 @@
-.menu-service {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: calc(-1 * var(--card-distance));
-    margin-left: calc(-1 * var(--card-distance));
-    &>.picture-portfolio {
-        flex-basis: calc(100%/3 - var(--card-distance));
-        margin-left: var(--card-distance);
-        margin-top: var(--card-distance);
-    }
-}
 
 .picture-portfolio {
     text-align: left;
@@ -52,4 +41,5 @@
     border-bottom: 1px solid var(--border-portfolio);
     border-right: 1px solid var(--border-portfolio);
     padding: 20px 24px;
+    flex-grow: 1;
 }
