@@ -726,6 +726,16 @@ body {
   .header__navigation {
     column-gap: 95px;
   }
+  .connection__header--mail {
+    margin-bottom: 0;
+  }
+  .connection__header {
+    flex-direction: row;
+    align-items: center;
+  }
+  .page-header {
+    padding: 25px 0;
+  }
 }
 .hero {
   padding: 118px 0;
