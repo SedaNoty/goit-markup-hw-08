@@ -67,6 +67,8 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -1066,11 +1068,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--text-contacts);
   margin-bottom: 16px;
-}
-
-.team__foto-member {
-  max-width: 100%;
-  margin: 0 auto;
 }
 
 .team__title {
