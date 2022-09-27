@@ -125,6 +125,7 @@
         </div>
       </div>
     </header>
+
     <!-- Main -->
 
     <main>
@@ -223,23 +224,59 @@
           <h2 class="work__title">Чим ми займаємося</h2>
           <ul class="work__menu-foto">
             <li class="work__foto-work">
-              <img src="./images/work-1.jpg" alt="development" width="370" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desk-work1.jpg    1x,
+                    ./images/desk-work1@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/desk-work1.jpg"
+                  alt="development"
+                  width="370"
+                />
+              </picture>
+
               <div class="work__applications">
                 <p class="work__text-applcations">Десктопні додатки</p>
               </div>
             </li>
             <li class="work__foto-work">
-              <img
-                src="./images/work-2.jpg"
-                alt="mobile optimization"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desk-work2.jpg    1x,
+                    ./images/desk-work2@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <img
+                  src="./images/desk-work2.jpg"
+                  alt="mobile optimization"
+                  width="370"
+                />
+              </picture>
+
               <div class="work__applications">
                 <p class="work__text-applcations">Мобільні додатки</p>
               </div>
             </li>
             <li class="work__foto-work">
-              <img src="./images/work-3.jpg" alt="testing" width="370" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desk-work3.jpg    1x,
+                    ./images/desk-work3@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <img src="./images/desk-work3.jpg" alt="testing" width="370" />
+              </picture>
+
               <div class="work__applications">
                 <p class="work__text-applcations">Дизайнерські рішення</p>
               </div>

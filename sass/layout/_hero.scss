@@ -3,14 +3,14 @@
             text-align: center;
             background-position: center;
             background-repeat: no-repeat;
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/_Header_Mobx1.jpg);
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header-Mobx1.jpg);
         }
 
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 480px),
         screen and (min-resolution: 192dpi) and (min-width: 480px),
         screen and (min-resolution: 2dppx) and (min-width: 480px) {
         .hero {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/_Header_Mob@x2.jpg);
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header-Mob@x2.jpg);
         }
     }
 
@@ -28,7 +28,7 @@
 
    @media screen and (min-width: 768px) {
         .hero {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/_Header_Tabx1.jpg);
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header-Tabx1.jpg);
         }
     }  
 
@@ -36,7 +36,7 @@
          screen and (min-resolution: 192dpi) and (min-width: 768px),
          screen and (min-resolution: 2dppx) and (min-width: 768px) {
         .hero {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/_Header_Tab@x2.jpg);
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header-Tab@x2.jpg);
         }
     }
 
@@ -46,7 +46,7 @@
             max-width: 1600px;
             margin: 0 auto;
             background-size: cover;
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/_Header_Descx1.jpg);
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header-Descx1.jpg);
         }
     
         .hero__title {
@@ -59,7 +59,7 @@
   screen and (min-resolution: 192dpi) and (min-width: 1200px),
   screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     .hero {
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/_Header_Desc@x2.jpg) ;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header-Desc@x2.jpg) ;
     }
   }
 
