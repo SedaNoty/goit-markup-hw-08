@@ -78,6 +78,7 @@
 }
 
 .modal-form-icon-check {
+    flex-shrink: 0;
     width: 16px;
     height: 15px;
     border: 2px solid $text-main;
@@ -89,6 +90,8 @@
 
 .modal-form-check {
     position: absolute;
+    
+
     appearance: none;
     text-decoration-color: #188CE8;
     &:focus+.modal-form-icon-check {
@@ -116,7 +119,12 @@
     fill: $main-color;
 }
 
+.modal-form-agreement__text {
+    display: flex;
+}
 .modal-text-policy {
+    display: inline-block;
+    white-space: nowrap;
     font-size: 14px;
     line-height: 1.7;
     text-decoration: underline;
@@ -130,6 +138,10 @@
             line-height: 1.7;
             color: var(--text-contacts);
         }
+}
+.modal-text-policy-first {
+    display: inline-block;
+    white-space: nowrap;
 }
 
 .modal-form-submit {
@@ -154,5 +166,4 @@
             background-color: var(--bcg-btn-hero);
         }
 }
-
 

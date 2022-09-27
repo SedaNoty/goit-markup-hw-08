@@ -1,4 +1,8 @@
-
+.team__menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
 
 .features__features-card {
     margin-bottom: 30px;
@@ -34,11 +38,24 @@
       .features__features-card {
         width: 354px;
         display: inline-block;
-        // text-align: center;
     }
-    .features__description {
+
+    .features__features-menu {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .features__features-card {
+        width: calc((100% - 30px)/2);
+    }
+        .features__description {
         text-align: left;
     }
+    // .team__menu {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     gap: 30px;
+    // }
 
 }
 

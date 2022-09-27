@@ -7,6 +7,12 @@
     display: flex;
 }
 
+@media screen and (max-width: 767px) {
+    .footer-general {
+        flex-direction: column;
+    }
+}
+
 .footer-nav,
 .footer-social {
     display: inline-block;
@@ -24,8 +30,8 @@
              margin-bottom: 60px;
     }
     .footer-general {
-        flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
     .footer-mail-subscribe {
         display: block;
@@ -157,22 +163,10 @@
         width: 450px;
     }
     .footer-form {
-        margin-top: 187px;
+        margin-top: 60px;
     }
     .footer {
         position: relative;
-    }
-    .footer-social {
-        position: absolute;
-        top: 65px;
-        right: 89px;
-        margin-bottom: 0;
-    }
-    .footer-nav {
-        position: absolute;
-        top: 60px;
-        left: 76px;
-        margin-bottom: 0;
     }
 }   
 

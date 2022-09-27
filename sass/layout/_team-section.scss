@@ -36,10 +36,7 @@
     background-color: $main-color;
     border-radius: 0 0 4px 4px;
     box-shadow: var(--card-shadow);
-    &:not(:last-child) {
-        margin-bottom: 30px;
-    }
-}
+ }
 
 .team__members {
     padding-top: 30px;
@@ -48,7 +45,6 @@
 
 @media screen and (min-width: 768px){
         .team__foto {
-            display: inline-block;
             width: calc((100% - 30px)/2);
          }
 }
