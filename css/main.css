@@ -250,7 +250,9 @@ body {
   }
   .mobile-menu__social {
     display: flex;
-    column-gap: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
   }
   .mobile-menu__social-link {
     display: block;
@@ -483,11 +485,12 @@ body {
 
 .modal-form-agreement__text {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .modal-text-policy {
   display: inline-block;
-  white-space: wrap;
+  white-space: nowrap;
   font-size: 14px;
   line-height: 1.7;
   text-decoration: underline;
@@ -505,15 +508,9 @@ body {
 
 .modal-text-policy-first {
   display: inline-block;
-  white-space: wrap;
+  white-space: nowrap;
 }
 
-@media screen and (min-width: 450px) {
-  .modal-text-policy,
-.modal-text-policy-first {
-    white-space: nowrap;
-  }
-}
 .modal-form-submit {
   cursor: pointer;
   margin: auto;

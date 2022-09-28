@@ -121,11 +121,14 @@
 
 .modal-form-agreement__text {
     display: flex;
+    flex-wrap: wrap;
+    // justify-content: center;
+  
 }
 
 .modal-text-policy {
     display: inline-block;
-    white-space: wrap;
+    white-space: nowrap;
     font-size: 14px;
     line-height: 1.7;
     text-decoration: underline;
@@ -142,16 +145,16 @@
 }
 .modal-text-policy-first {
     display: inline-block;
-    white-space: wrap;
+    white-space: nowrap;
 }
 
-@media screen and (min-width: 450px) {
+// @media screen and (min-width: 450px) {
 
-    .modal-text-policy,
-    .modal-text-policy-first {
-        white-space: nowrap;
-    }
-}
+//     .modal-text-policy,
+//     .modal-text-policy-first {
+//         white-space: nowrap;
+//     }
+// }
 
 .modal-form-submit {
     cursor: pointer;
