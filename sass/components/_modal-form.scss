@@ -122,9 +122,10 @@
 .modal-form-agreement__text {
     display: flex;
 }
+
 .modal-text-policy {
     display: inline-block;
-    white-space: nowrap;
+    white-space: wrap;
     font-size: 14px;
     line-height: 1.7;
     text-decoration: underline;
@@ -141,7 +142,15 @@
 }
 .modal-text-policy-first {
     display: inline-block;
-    white-space: nowrap;
+    white-space: wrap;
+}
+
+@media screen and (min-width: 450px) {
+
+    .modal-text-policy,
+    .modal-text-policy-first {
+        white-space: nowrap;
+    }
 }
 
 .modal-form-submit {

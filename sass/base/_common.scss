@@ -21,10 +21,14 @@ img {
 }
 
 
+
 body {
     font-family: $fontMain;
     background-color: $main-color;
     color: $text-main;
+}
+.no-scroll {
+    overflow: hidden;
 }
 
 .pointer {

@@ -77,6 +77,10 @@ body {
   color: #212121;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .pointer {
   cursor: pointer;
 }
@@ -128,20 +132,18 @@ body {
   margin: -1px;
 }
 
+.connection__contact:hover .connection__icon, .connection__contact:focus .connection__icon {
+  fill: #2196F3;
+}
+
 .connection__contact:hover,
 .connection__contact:focus {
   color: #2196F3;
-  fill: #2196F3;
 }
 
 .connection__icon {
   margin-right: 10px;
   fill: var(--text-contacts);
-}
-
-.connection__icon:hover,
-.connection__icon:focus {
-  fill: #2196F3;
 }
 
 .connection__contact {
@@ -485,7 +487,7 @@ body {
 
 .modal-text-policy {
   display: inline-block;
-  white-space: nowrap;
+  white-space: wrap;
   font-size: 14px;
   line-height: 1.7;
   text-decoration: underline;
@@ -503,9 +505,15 @@ body {
 
 .modal-text-policy-first {
   display: inline-block;
-  white-space: nowrap;
+  white-space: wrap;
 }
 
+@media screen and (min-width: 450px) {
+  .modal-text-policy,
+.modal-text-policy-first {
+    white-space: nowrap;
+  }
+}
 .modal-form-submit {
   cursor: pointer;
   margin: auto;
@@ -561,14 +569,6 @@ body {
 .cards-portfolio:hover .overlay,
 .cards-portfolio:focus .overlay {
   transform: translateY(0);
-}
-
-.menu-description {
-  border-left: 1px solid var(--border-portfolio);
-  border-bottom: 1px solid var(--border-portfolio);
-  border-right: 1px solid var(--border-portfolio);
-  padding: 20px 24px;
-  flex-grow: 1;
 }
 
 .logo-studio {
@@ -735,6 +735,10 @@ body {
   }
   .page-header {
     padding: 25px 0;
+  }
+  .connection__contact {
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 .hero {
@@ -1223,6 +1227,14 @@ body {
 .menu-service {
   display: flex;
   flex-wrap: wrap;
+}
+
+.menu-description {
+  border-left: 1px solid var(--border-portfolio);
+  border-bottom: 1px solid var(--border-portfolio);
+  border-right: 1px solid var(--border-portfolio);
+  padding: 20px 24px;
+  flex-grow: 1;
 }
 
 @media screen and (max-width: 1199px) {
